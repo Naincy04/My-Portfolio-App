@@ -30,4 +30,14 @@ List<Project> projectList = [
       'The Compliment Generator Task in Flutter is a delightful and uplifting application designed to spread positivity and brighten users days. With a charming and user-friendly interface, the app generates personalized compliments with just a tap. Users can enjoy a variety of compliments, ranging from encouraging messages to light-hearted affirmations. The application not only aims to boost users spirits but also provides an interactive and enjoyable experience. Whether used for self-motivation or to share compliments with friends, the Flutter Compliment Generator Task is a fun and heartwarming addition to daily routines, fostering a positive and affirming atmosphere.',
       'assets/images/cui.png',
       'https://github.com/Naincy04/compliment-generator-task'),
+  Project(
+      'Tic-tac-toe',
+      'The Tic-Tac-Toe App in Flutter brings the classic game to life with a modern and engaging twist. With a sleek and intuitive interface, the app allows users to enjoy the timeless game of Tic-Tac-Toe with friends or against an AI opponent. The interactive grid provides a responsive platform for players to make their moves, and the app dynamically updates the game state, indicating wins, draws, or losses. Multiplayer functionality enables users to challenge friends for a quick and enjoyable gaming experience. The Flutter Tic-Tac-Toe App combines simplicity and entertainment, making it an ideal choice for casual gaming and strategic fun, fostering friendly competition and strategic thinking.',
+      'assets/images/cui.png',
+      'https://github.com/Naincy04/tic_tac_toe_game'),
+  Project(
+      'BMI calculator app',
+      'The BMI Calculator App in Flutter is a handy tool for users seeking to monitor and manage their body mass index (BMI) in a straightforward and visually appealing manner. Featuring a clean and user-friendly design, the app allows users to input their weight and height, and instantly calculates their BMI based on the provided information. With an intuitive color-coded system, the app provides an easy-to-understand interpretation of the users BMI category, such as underweight, normal weight, overweight, or obese. The Flutter BMI Calculator App is not only a practical resource for individuals striving for a healthier lifestyle but also serves as an educational tool for understanding and tracking ones body composition conveniently.',
+      'assets/images/cui.png',
+      'https://github.com/Naincy04/calculate_BMI_app'),
 ];
