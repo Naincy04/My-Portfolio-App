@@ -58,6 +58,10 @@ google_fonts
 2.14
 file:///home/naincy/.pub-cache/hosted/pub.dev/google_fonts-5.1.0/
 file:///home/naincy/.pub-cache/hosted/pub.dev/google_fonts-5.1.0/lib/
+graphs
+2.18
+file:///home/naincy/.pub-cache/hosted/pub.dev/graphs-2.3.1/
+file:///home/naincy/.pub-cache/hosted/pub.dev/graphs-2.3.1/lib/
 http
 3.0
 file:///home/naincy/.pub-cache/hosted/pub.dev/http-1.1.0/
@@ -130,6 +134,14 @@ plugin_platform_interface
 2.18
 file:///home/naincy/.pub-cache/hosted/pub.dev/plugin_platform_interface-2.1.5/
 file:///home/naincy/.pub-cache/hosted/pub.dev/plugin_platform_interface-2.1.5/lib/
+rive
+2.17
+file:///home/naincy/.pub-cache/hosted/pub.dev/rive-0.12.4/
+file:///home/naincy/.pub-cache/hosted/pub.dev/rive-0.12.4/lib/
+rive_common
+2.17
+file:///home/naincy/.pub-cache/hosted/pub.dev/rive_common-0.2.8/
+file:///home/naincy/.pub-cache/hosted/pub.dev/rive_common-0.2.8/lib/
 source_span
 2.18
 file:///home/naincy/.pub-cache/hosted/pub.dev/source_span-1.10.0/

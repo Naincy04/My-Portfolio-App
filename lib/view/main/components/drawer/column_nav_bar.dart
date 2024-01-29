@@ -23,35 +23,50 @@ class ColumnNavigationBar extends StatelessWidget {
                 },
                 text: 'Home',
               ),
-              if (!Responsive.isLargeMobile(context))
-                NavigationTextButton(
-                    onTap: () {
-                      controller.animateToPage(1,
-                          duration: const Duration(milliseconds: 500),
-                          curve: Curves.easeIn);
-                    },
-                    text: 'About Me'),
+              NavigationTextButton(
+                  onTap: () {
+                    controller.animateToPage(1,
+                        duration: const Duration(milliseconds: 500),
+                        curve: Curves.easeIn);
+                  },
+                  text: 'About Me'),
               NavigationTextButton(
                   onTap: () {
                     controller.animateToPage(2,
                         duration: const Duration(milliseconds: 500),
                         curve: Curves.easeIn);
                   },
-                  text: 'Projects'),
+                  text: 'Education'),
               NavigationTextButton(
-                  onTap: () {
-                    controller.animateToPage(3,
-                        duration: const Duration(milliseconds: 500),
-                        curve: Curves.easeIn);
-                  },
-                  text: 'Contact Me'),
+                onTap: () {
+                  controller.animateToPage(3,
+                      duration: const Duration(milliseconds: 500),
+                      curve: Curves.easeIn);
+                },
+                text: 'Skills',
+              ),
               NavigationTextButton(
                   onTap: () {
                     controller.animateToPage(4,
                         duration: const Duration(milliseconds: 500),
                         curve: Curves.easeIn);
                   },
-                  text: 'Achievements'),
+                  text: 'Project'),
+              NavigationTextButton(
+                onTap: () {
+                  controller.animateToPage(5,
+                      duration: const Duration(milliseconds: 500),
+                      curve: Curves.easeIn);
+                },
+                text: 'Experience',
+              ),
+              NavigationTextButton(
+                  onTap: () {
+                    controller.animateToPage(6,
+                        duration: const Duration(milliseconds: 500),
+                        curve: Curves.easeIn);
+                  },
+                  text: 'Contact Me'),
             ],
           ),
         );
