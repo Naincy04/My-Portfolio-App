@@ -12,7 +12,7 @@ class KnowledgeText extends StatelessWidget {
       child: Row(
         children: [
           SvgPicture.asset('assets/icons/check.svg'),
-          SizedBox(
+          const SizedBox(
             width: defaultPadding / 2,
           ),
           Text(knowledge),

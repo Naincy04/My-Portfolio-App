@@ -79,7 +79,7 @@ class AboutMe extends StatelessWidget {
         ),
         const SizedBox(height: defaultPadding),
         const DrawerImage(),
-        SizedBox(height: defaultPadding * 2),
+        const SizedBox(height: defaultPadding * 2),
         // const Spacer(),
       ],
     );

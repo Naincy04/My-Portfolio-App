@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_portfolio/view%20model/controller.dart';
-import 'package:flutter_portfolio/view%20model/responsive.dart';
 import 'package:flutter_portfolio/view/main/components/navigation_button.dart';
 
 class ColumnNavigationBar extends StatelessWidget {
