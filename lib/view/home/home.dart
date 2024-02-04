@@ -18,7 +18,7 @@ class HomePage extends StatelessWidget {
       const AboutMe(),
 
       // Certifications(),
-      const Academics(),
+      Academics(),
       const Skills(),
       ProjectsView(),
       const Experience(),
