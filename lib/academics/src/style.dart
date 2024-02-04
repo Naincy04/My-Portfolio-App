@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 class IndicatorStyle {
   const IndicatorStyle({
     this.width = 20,
-    this.height = 20,
+    this.height = 80,
     this.indicator,
     this.padding = const EdgeInsets.all(0),
     this.color = Colors.grey,
@@ -81,7 +81,7 @@ class IconStyle {
 class LineStyle {
   const LineStyle({
     this.color = Colors.grey,
-    this.thickness = 4,
+    this.thickness = 6,
   });
 
   /// The color used to paint the line. It defaults to ([Colors.grey]).

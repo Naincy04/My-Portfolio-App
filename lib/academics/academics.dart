@@ -26,6 +26,11 @@ class Academics extends StatelessWidget {
       institution: 'ABC School',
       duration: '2014 - 2018',
     ),
+    AcademicDetail(
+      degree: ' School Diploma',
+      institution: 'ABC School',
+      duration: '2014 - 2018',
+    ),
     // Add more academic details as needed
   ];
 

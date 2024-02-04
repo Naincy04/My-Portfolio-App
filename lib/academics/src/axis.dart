@@ -99,32 +99,35 @@ AxisPosition calculateAxisPositioning({
         ' between 0.0 and 1.0 inclusive');
   }
 
-  if (objectSize >= totalSize)
+  if (objectSize >= totalSize) {
     return _alignObject(
       totalSize: totalSize,
       objectSize: objectSize,
       alignEnd: true,
       alignStart: true,
     );
+  }
 
   final objectCenter = totalSize * axisPosition;
   final objectHalfSize = objectSize / 2;
 
   final firstSize = objectCenter - objectHalfSize;
-  if (firstSize < 0)
+  if (firstSize < 0) {
     return _alignObject(
       totalSize: totalSize,
       objectSize: objectSize,
       alignStart: true,
     );
+  }
 
   final secondSize = totalSize - objectCenter - objectHalfSize;
-  if (secondSize < 0)
+  if (secondSize < 0) {
     return _alignObject(
       totalSize: totalSize,
       objectSize: objectSize,
       alignEnd: true,
     );
+  }
 
   return AxisPosition(
     firstSpace: AxisCoordinates(start: 0, end: firstSize),
@@ -139,15 +142,17 @@ AxisPosition _alignObject({
   bool alignStart = false,
   bool alignEnd = false,
 }) {
-  if (alignStart == false && alignEnd == false)
+  if (alignStart == false && alignEnd == false) {
     throw AssertionError('Either alignTop or alignBottom must be true');
+  }
 
-  if (alignStart && alignEnd)
+  if (alignStart && alignEnd) {
     return AxisPosition(
       firstSpace: AxisCoordinates.zero(),
       objectSpace: AxisCoordinates(start: 0, end: totalSize),
       secondSpace: AxisCoordinates.zero(),
     );
+  }
 
   return AxisPosition(
     firstSpace: alignStart

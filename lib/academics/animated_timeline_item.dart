@@ -42,21 +42,22 @@ class _AnimatedTimelineItemState extends State<AnimatedTimelineItem>
       opacity: _opacityAnimation,
       child: TimelineTile(
         alignment: TimelineAlign.manual,
-        lineXY: 0.3,
+        lineXY: 0.5,
         isFirst: widget.delay.inMilliseconds == 0,
         indicatorStyle: IndicatorStyle(
-          width: 20,
+          width: 40,
           color: Colors.white,
-          padding: EdgeInsets.all(6),
+          padding: const EdgeInsets.all(6),
           iconStyle: IconStyle(
             color: Colors.black,
             iconData: Icons.school,
+            fontSize: 20,
           ),
         ),
         endChild: TimelineItem(academicDetail: widget.academicDetail),
         beforeLineStyle: const LineStyle(
           color: Colors.grey,
-          thickness: 2,
+          thickness: 4,
         ),
       ),
     );
