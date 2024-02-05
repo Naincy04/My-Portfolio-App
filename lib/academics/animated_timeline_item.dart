@@ -3,7 +3,6 @@ import 'package:flutter_portfolio/academics/academics.dart';
 import 'package:flutter_portfolio/academics/timeline_item.dart';
 import 'package:flutter_portfolio/res/constants.dart';
 import 'package:flutter_portfolio/view%20model/responsive.dart';
-import 'package:timeline_tile/timeline_tile.dart';
 
 class AnimatedTimelineItem extends StatefulWidget {
   final AcademicDetail academicDetail;
@@ -65,20 +64,19 @@ class _AnimatedTimelineItemState extends State<AnimatedTimelineItem>
                     child: TimelineItem(academicDetail: widget.academicDetail),
                   )
                 : Padding(
-                    padding: const EdgeInsets.symmetric(
-                        horizontal: defaultPadding / 4),
+                    padding:
+                        const EdgeInsets.symmetric(horizontal: defaultPadding),
                     child: TimelineItem(academicDetail: widget.academicDetail),
                   )
             : null,
         endChild: widget.index.isOdd
             ? Responsive.isDesktop(context)
-                ? Padding(
-                    padding: const EdgeInsets.only(
-                        right: defaultPadding * 20, left: defaultPadding * 2),
+                ? Container(
+                    margin: const EdgeInsets.only(right: defaultPadding),
                     child: TimelineItem(academicDetail: widget.academicDetail),
                   )
                 : Padding(
-                    padding: const EdgeInsets.only(left: defaultPadding / 4),
+                    padding: const EdgeInsets.only(left: defaultPadding),
                     child: TimelineItem(academicDetail: widget.academicDetail),
                   )
             : null,
