@@ -39,7 +39,7 @@ class AboutMe extends StatelessWidget {
                     ? const EdgeInsets.only(left: defaultPadding * 2)
                     : const EdgeInsets.only(left: defaultPadding * 4),
                 child: Text(
-                  'Lorem ipsum dolor sit amet, consectetur adipiscing elit, \nsed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+                  'Passionate about turning ideas into reality through code! \n\nEnthusiastic Full Stack Developer passionate about creating scalable and robust applications. \n\nProficient in a variety of technologies including C, C++, Flutter, Dart, Firebase, HTML, CSS, JavaScript, and SQL Server.\n\nCurrently interning as a Flutter Developer at RIG GROUP, where I contribute to creating innovative and user-friendly mobile applications.',
                   style: Theme.of(context).textTheme.titleSmall!.copyWith(
                         color: primaryColor,
                         fontSize: 16,

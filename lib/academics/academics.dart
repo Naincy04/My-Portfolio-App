@@ -65,8 +65,8 @@ class Academics extends StatelessWidget {
               );
             },
           ),
-          const SizedBox(height: defaultPadding * 5),
-          const Text("Image"),
+          // const SizedBox(height: defaultPadding * 5),
+          // const Text("Image"),
         ],
       ),
     );
