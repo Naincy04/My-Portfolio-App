@@ -6,6 +6,8 @@ export 'package:timeline_tile/src/timeline_divider.dart';
 
 import 'package:flutter/material.dart';
 import 'package:flutter_portfolio/academics/academics.dart';
+import 'package:flutter_portfolio/res/constants.dart';
+import 'package:flutter_portfolio/view%20model/responsive.dart';
 
 class TimelineItem extends StatelessWidget {
   final AcademicDetail academicDetail;
@@ -14,14 +16,23 @@ class TimelineItem extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Card(
-      margin: const EdgeInsets.symmetric(vertical: 10, horizontal: 20),
-      child: ListTile(
-        title: Text(academicDetail.degree),
-        subtitle:
-            Text('${academicDetail.institution}\n${academicDetail.duration}'),
-        leading: const Icon(Icons.school),
-      ),
+    return ListTile(
+      textColor: Colors.white,
+
+      title: Text(academicDetail.degree),
+
+      subtitle: Responsive.isDesktop(context)
+          ? Padding(
+              padding: const EdgeInsets.only(left: defaultPadding * 16),
+              child: Text(
+                  '${academicDetail.institution}\n${academicDetail.duration}'),
+            )
+          : Padding(
+              padding: const EdgeInsets.symmetric(horizontal: defaultPadding),
+              child: Text(
+                  '${academicDetail.institution}\n${academicDetail.duration}'),
+            ),
+      // leading: const Icon(Icons.school),
     );
   }
 }

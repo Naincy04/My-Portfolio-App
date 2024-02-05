@@ -52,6 +52,7 @@ class Academics extends StatelessWidget {
               return AnimatedTimelineItem(
                 academicDetail: academicDetails[index],
                 delay: Duration(milliseconds: 200 * index),
+                index: index,
               );
             },
           ),

@@ -1,13 +1,17 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_portfolio/academics/academics.dart';
 import 'package:flutter_portfolio/academics/timeline_item.dart';
+import 'package:flutter_portfolio/res/constants.dart';
+import 'package:flutter_portfolio/view%20model/responsive.dart';
 import 'package:timeline_tile/timeline_tile.dart';
 
 class AnimatedTimelineItem extends StatefulWidget {
   final AcademicDetail academicDetail;
   final Duration delay;
+  final int index;
 
-  AnimatedTimelineItem({required this.academicDetail, required this.delay});
+  AnimatedTimelineItem(
+      {required this.academicDetail, required this.delay, required this.index});
 
   @override
   _AnimatedTimelineItemState createState() => _AnimatedTimelineItemState();
@@ -41,7 +45,7 @@ class _AnimatedTimelineItemState extends State<AnimatedTimelineItem>
     return FadeTransition(
       opacity: _opacityAnimation,
       child: TimelineTile(
-        alignment: TimelineAlign.center,
+        alignment: TimelineAlign.manual,
         lineXY: 0.5,
         isFirst: widget.delay.inMilliseconds == 0,
         indicatorStyle: IndicatorStyle(
@@ -54,7 +58,21 @@ class _AnimatedTimelineItemState extends State<AnimatedTimelineItem>
             fontSize: 20,
           ),
         ),
-        endChild: TimelineItem(academicDetail: widget.academicDetail),
+        startChild: widget.index.isEven
+            ? Responsive.isDesktop(context)
+                ? Padding(
+                    padding: const EdgeInsets.only(left: defaultPadding * 16),
+                    child: TimelineItem(academicDetail: widget.academicDetail),
+                  )
+                : Padding(
+                    padding:
+                        const EdgeInsets.symmetric(horizontal: defaultPadding),
+                    child: TimelineItem(academicDetail: widget.academicDetail),
+                  )
+            : null,
+        endChild: widget.index.isOdd
+            ? TimelineItem(academicDetail: widget.academicDetail)
+            : null,
         beforeLineStyle: const LineStyle(
           color: Colors.grey,
           thickness: 4,
