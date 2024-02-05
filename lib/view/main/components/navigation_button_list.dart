@@ -60,13 +60,6 @@ class NavigationButtonList extends StatelessWidget {
                 },
                 text: 'Experience',
               ),
-              NavigationTextButton(
-                  onTap: () {
-                    controller.animateToPage(6,
-                        duration: const Duration(milliseconds: 500),
-                        curve: Curves.easeIn);
-                  },
-                  text: 'Contact Me'),
             ],
           ),
         );
