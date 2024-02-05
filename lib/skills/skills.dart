@@ -27,7 +27,154 @@ class Skills extends StatelessWidget {
                         const SizedBox(height: defaultPadding),
                       const TitleText(prefix: '', title: 'Skills'),
                       const SizedBox(height: defaultPadding),
-                      const Knowledges(),
+                      // const Knowledges(),
+                      SizedBox(
+                        height: 100,
+                        child: Column(
+                          children: [
+                            Card(
+                              elevation: 3,
+                              shadowColor:
+                                  const Color.fromARGB(255, 100, 99, 99),
+                              shape: RoundedRectangleBorder(
+                                borderRadius: BorderRadius.circular(10),
+                              ),
+                              color: const Color.fromARGB(255, 0, 0, 0),
+                              child: Row(
+                                children: [
+                                  SizedBox(
+                                      width: 100,
+                                      height: 75,
+                                      child: Padding(
+                                        padding: const EdgeInsets.all(8),
+                                        child: Image.asset(
+                                          "assets/images/flutter.png",
+                                        ),
+                                      )),
+                                  const Padding(
+                                    padding: EdgeInsets.fromLTRB(4, 8, 16, 8),
+                                    child: Text(
+                                      "Premiere\nPro",
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            ),
+                            Card(
+                              elevation: 3,
+                              shadowColor:
+                                  const Color.fromARGB(255, 100, 99, 99),
+                              shape: RoundedRectangleBorder(
+                                borderRadius: BorderRadius.circular(10),
+                              ),
+                              color: const Color.fromARGB(255, 0, 0, 0),
+                              child: Row(
+                                children: [
+                                  SizedBox(
+                                      width: 100,
+                                      height: 75,
+                                      child: Padding(
+                                        padding: const EdgeInsets.all(8),
+                                        child: Image.asset(
+                                          "assets/images/canva.png",
+                                        ),
+                                      )),
+                                  const Padding(
+                                    padding: EdgeInsets.fromLTRB(4, 8, 16, 8),
+                                    child: Text(
+                                      "Illustrator",
+                                    ),
+                                  )
+                                ],
+                              ),
+                            ),
+                            Card(
+                              elevation: 3,
+                              shadowColor:
+                                  const Color.fromARGB(255, 100, 99, 99),
+                              shape: RoundedRectangleBorder(
+                                borderRadius: BorderRadius.circular(10),
+                              ),
+                              color: const Color.fromARGB(255, 0, 0, 0),
+                              child: Row(
+                                children: [
+                                  SizedBox(
+                                      width: 100,
+                                      height: 75,
+                                      child: Padding(
+                                        padding: const EdgeInsets.all(8),
+                                        child: Image.asset(
+                                          'assets/images/git.png',
+                                        ),
+                                      )),
+                                  const Padding(
+                                    padding: EdgeInsets.fromLTRB(4, 8, 16, 8),
+                                    child: Text(
+                                      "Git",
+                                    ),
+                                  )
+                                ],
+                              ),
+                            ),
+                            Card(
+                              elevation: 3,
+                              shadowColor:
+                                  const Color.fromARGB(255, 100, 99, 99),
+                              shape: RoundedRectangleBorder(
+                                borderRadius: BorderRadius.circular(10),
+                              ),
+                              color: const Color.fromARGB(255, 0, 0, 0),
+                              child: Row(
+                                children: [
+                                  SizedBox(
+                                      width: 100,
+                                      height: 75,
+                                      child: Padding(
+                                        padding: const EdgeInsets.all(8),
+                                        child: Image.asset(
+                                          "assets/images/flutter.png",
+                                        ),
+                                      )),
+                                  const Padding(
+                                    padding: EdgeInsets.fromLTRB(4, 8, 16, 8),
+                                    child: Text(
+                                      "Flutter",
+                                    ),
+                                  )
+                                ],
+                              ),
+                            ),
+                            Card(
+                              elevation: 3,
+                              shadowColor:
+                                  const Color.fromARGB(255, 100, 99, 99),
+                              shape: RoundedRectangleBorder(
+                                borderRadius: BorderRadius.circular(10),
+                              ),
+                              color: const Color.fromARGB(255, 0, 0, 0),
+                              child: Row(
+                                children: [
+                                  SizedBox(
+                                      width: 100,
+                                      height: 75,
+                                      child: Padding(
+                                        padding: const EdgeInsets.all(8),
+                                        child: Image.asset(
+                                          "assets/images/dart.png",
+                                        ),
+                                      )),
+                                  const Padding(
+                                    padding: EdgeInsets.fromLTRB(4, 8, 16, 8),
+                                    child: Text(
+                                      "Dart",
+                                    ),
+                                  )
+                                ],
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
                     ]))));
   }
 }
