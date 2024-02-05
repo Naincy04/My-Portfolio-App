@@ -22,10 +22,11 @@ class TimelineItem extends StatelessWidget {
       title: Responsive.isDesktop(context)
           ? Padding(
               padding: const EdgeInsets.only(left: defaultPadding * 12),
-              child: Text(academicDetail.degree),
+              child:
+                  Text(academicDetail.degree, style: TextStyle(fontSize: 20)),
             )
           : Padding(
-              padding: const EdgeInsets.symmetric(horizontal: defaultPadding),
+              padding: const EdgeInsets.only(left: defaultPadding),
               child: Text(academicDetail.degree),
             ),
       subtitle: Responsive.isDesktop(context)
@@ -35,7 +36,7 @@ class TimelineItem extends StatelessWidget {
                   '${academicDetail.institution}\n${academicDetail.duration}'),
             )
           : Padding(
-              padding: const EdgeInsets.symmetric(horizontal: defaultPadding),
+              padding: const EdgeInsets.only(left: defaultPadding),
               child: Text(
                   '${academicDetail.institution}\n${academicDetail.duration}'),
             ),
