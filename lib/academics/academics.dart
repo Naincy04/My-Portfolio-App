@@ -1,20 +1,20 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_portfolio/academics/animated_timeline_item.dart';
 import 'package:flutter_portfolio/res/constants.dart';
-import 'package:flutter_portfolio/view%20model/responsive.dart';
-import 'package:flutter_portfolio/view/intro/components/animated_texts_componenets.dart';
 import 'package:flutter_portfolio/view/projects/components/title_text.dart';
-import 'dart:math';
 
 class AcademicDetail {
   final String degree;
   final String institution;
   final String duration;
+  final String grade;
 
-  AcademicDetail(
-      {required this.degree,
-      required this.institution,
-      required this.duration});
+  AcademicDetail({
+    required this.grade,
+    required this.degree,
+    required this.institution,
+    required this.duration,
+  });
 }
 
 class Academics extends StatelessWidget {
@@ -24,16 +24,19 @@ class Academics extends StatelessWidget {
       degree:
           'Bachelor of Technology -BTech, \nComputer Science and Engineering',
       duration: '2021 - 2025',
+      grade: 'CGPA: 9.0',
     ),
     AcademicDetail(
       institution: 'Delhi Model Public School',
       degree: 'Intermediate',
       duration: '2019 - 2020',
+      grade: 'Percentage: 80%',
     ),
     AcademicDetail(
       institution: 'Jesus And Mary Academy',
       degree: 'Matriculation',
       duration: '2017 - 2018',
+      grade: 'Percentage: 94%',
     ),
     // Add more academic details as needed
   ];
@@ -60,6 +63,8 @@ class Academics extends StatelessWidget {
               );
             },
           ),
+          const SizedBox(height: defaultPadding * 5),
+          Text("Image"),
         ],
       ),
     );

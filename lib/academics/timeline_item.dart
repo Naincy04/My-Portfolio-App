@@ -12,46 +12,62 @@ class TimelineItem extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ListTile(
-      textColor: Colors.white,
-      title: index.isOdd
-          ? Responsive.isDesktop(context)
-              ? Padding(
-                  padding: const EdgeInsets.only(left: defaultPadding * 32),
-                  child: Text(academicDetail.institution,
-                      style: TextStyle(fontSize: 20)),
-                )
-              : Padding(
-                  padding: const EdgeInsets.only(left: defaultPadding),
-                  child: Text(academicDetail.institution),
-                )
-          : Padding(
-              padding: const EdgeInsets.only(
-                  right: defaultPadding, left: defaultPadding / 2),
-              child: Text(academicDetail.institution,
-                  style: TextStyle(fontSize: 20)),
-            ),
-
-      subtitle: index.isOdd
-          ? Responsive.isDesktop(context)
-              ? Padding(
-                  padding: const EdgeInsets.only(left: defaultPadding * 32),
-                  child: Text(
-                    '${academicDetail.degree}\n${academicDetail.duration}',
+        textColor: Colors.white,
+        title: index.isOdd
+            ? Responsive.isDesktop(context)
+                ? Padding(
+                    padding: const EdgeInsets.only(left: defaultPadding * 28),
+                    child: Text(academicDetail.institution,
+                        style: TextStyle(fontSize: 24)),
+                  )
+                : Padding(
+                    padding: const EdgeInsets.only(left: defaultPadding),
+                    child: Text(academicDetail.institution),
+                  )
+            : Responsive.isDesktop(context)
+                ? Padding(
+                    padding: const EdgeInsets.only(
+                        right: defaultPadding, left: defaultPadding / 2),
+                    child: Text(academicDetail.institution,
+                        style: TextStyle(fontSize: 24)),
+                  )
+                : Padding(
+                    padding: const EdgeInsets.only(left: defaultPadding),
+                    child: Text(academicDetail.institution),
                   ),
-                )
-              : Padding(
-                  padding: const EdgeInsets.only(left: defaultPadding),
-                  child: Text(
-                      '${academicDetail.degree}\n${academicDetail.duration}'),
-                )
-          : Padding(
-              padding: const EdgeInsets.only(
-                  right: defaultPadding, left: defaultPadding / 2),
-              child: Text(
-                '${academicDetail.degree}\n${academicDetail.duration}',
-              ),
-            ),
-      // leading: const Icon(Icons.school),
-    );
+        subtitle: index.isOdd
+            ? Responsive.isDesktop(context)
+                ? Padding(
+                    padding: const EdgeInsets.only(left: defaultPadding * 28),
+                    child: Text(
+                      '${academicDetail.degree}\n${academicDetail.duration}\n${academicDetail.grade}',
+                      style:
+                          TextStyle(fontSize: 18, fontWeight: FontWeight.w500),
+                    ),
+                  )
+                : Padding(
+                    padding: const EdgeInsets.only(left: defaultPadding),
+                    child: Text(
+                      '${academicDetail.degree}\n${academicDetail.duration}\n${academicDetail.grade}',
+                    ),
+                  )
+            : Responsive.isDesktop(context)
+                ? Padding(
+                    padding: const EdgeInsets.only(
+                        right: defaultPadding, left: defaultPadding / 2),
+                    child: Text(
+                      '${academicDetail.degree}\n${academicDetail.duration}\n${academicDetail.grade}',
+                      style:
+                          TextStyle(fontSize: 18, fontWeight: FontWeight.w500),
+                    ),
+                  )
+                : Padding(
+                    padding: const EdgeInsets.only(left: defaultPadding),
+                    child: Text(
+                      '${academicDetail.degree}\n${academicDetail.duration}\n${academicDetail.grade}',
+                    ),
+                  )
+        // leading: const Icon(Icons.school),
+        );
   }
 }

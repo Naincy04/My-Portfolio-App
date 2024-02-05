@@ -3,15 +3,13 @@ import 'package:flutter_portfolio/academics/academics.dart';
 import 'package:flutter_portfolio/academics/src/style.dart';
 import 'package:flutter_portfolio/academics/src/tile.dart';
 import 'package:flutter_portfolio/academics/timeline_item.dart';
-import 'package:flutter_portfolio/res/constants.dart';
-import 'package:flutter_portfolio/view%20model/responsive.dart';
 
 class AnimatedTimelineItem extends StatefulWidget {
   final AcademicDetail academicDetail;
   final Duration delay;
   final int index;
 
-  AnimatedTimelineItem(
+  const AnimatedTimelineItem(
       {required this.academicDetail, required this.delay, required this.index});
 
   @override
