@@ -7,7 +7,7 @@ class TimelineItem extends StatelessWidget {
   final AcademicDetail academicDetail;
   final int index; // Add index as a parameter
 
-  TimelineItem({required this.academicDetail, required this.index});
+  const TimelineItem({super.key, required this.academicDetail, required this.index});
 
   @override
   Widget build(BuildContext context) {
@@ -18,7 +18,7 @@ class TimelineItem extends StatelessWidget {
                 ? Padding(
                     padding: const EdgeInsets.only(left: defaultPadding * 28),
                     child: Text(academicDetail.institution,
-                        style: TextStyle(fontSize: 24)),
+                        style: const TextStyle(fontSize: 24)),
                   )
                 : Padding(
                     padding: const EdgeInsets.only(left: defaultPadding),
@@ -29,7 +29,7 @@ class TimelineItem extends StatelessWidget {
                     padding: const EdgeInsets.only(
                         right: defaultPadding, left: defaultPadding / 2),
                     child: Text(academicDetail.institution,
-                        style: TextStyle(fontSize: 24)),
+                        style: const TextStyle(fontSize: 24)),
                   )
                 : Padding(
                     padding: const EdgeInsets.only(left: defaultPadding),
@@ -41,8 +41,8 @@ class TimelineItem extends StatelessWidget {
                     padding: const EdgeInsets.only(left: defaultPadding * 28),
                     child: Text(
                       '${academicDetail.degree}\n${academicDetail.duration}\n${academicDetail.grade}',
-                      style:
-                          TextStyle(fontSize: 18, fontWeight: FontWeight.w500),
+                      style: const TextStyle(
+                          fontSize: 18, fontWeight: FontWeight.w500),
                     ),
                   )
                 : Padding(
@@ -57,8 +57,8 @@ class TimelineItem extends StatelessWidget {
                         right: defaultPadding, left: defaultPadding / 2),
                     child: Text(
                       '${academicDetail.degree}\n${academicDetail.duration}\n${academicDetail.grade}',
-                      style:
-                          TextStyle(fontSize: 18, fontWeight: FontWeight.w500),
+                      style: const TextStyle(
+                          fontSize: 18, fontWeight: FontWeight.w500),
                     ),
                   )
                 : Padding(

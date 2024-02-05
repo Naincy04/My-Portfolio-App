@@ -10,7 +10,7 @@ class AnimatedTimelineItem extends StatefulWidget {
   final int index;
 
   const AnimatedTimelineItem(
-      {required this.academicDetail, required this.delay, required this.index});
+      {super.key, required this.academicDetail, required this.delay, required this.index});
 
   @override
   _AnimatedTimelineItemState createState() => _AnimatedTimelineItemState();

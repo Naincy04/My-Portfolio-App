@@ -41,6 +41,8 @@ class Academics extends StatelessWidget {
     // Add more academic details as needed
   ];
 
+  Academics({super.key});
+
   @override
   Widget build(BuildContext context) {
     return SingleChildScrollView(
@@ -64,7 +66,7 @@ class Academics extends StatelessWidget {
             },
           ),
           const SizedBox(height: defaultPadding * 5),
-          Text("Image"),
+          const Text("Image"),
         ],
       ),
     );
