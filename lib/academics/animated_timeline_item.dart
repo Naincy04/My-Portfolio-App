@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_portfolio/academics/academics.dart';
+import 'package:flutter_portfolio/academics/src/style.dart';
+import 'package:flutter_portfolio/academics/src/tile.dart';
 import 'package:flutter_portfolio/academics/timeline_item.dart';
 import 'package:flutter_portfolio/res/constants.dart';
 import 'package:flutter_portfolio/view%20model/responsive.dart';
@@ -48,7 +50,7 @@ class _AnimatedTimelineItemState extends State<AnimatedTimelineItem>
         lineXY: 0.5,
         isFirst: widget.delay.inMilliseconds == 0,
         indicatorStyle: IndicatorStyle(
-          width: 40,
+          width: 50,
           color: Colors.white,
           padding: const EdgeInsets.all(6),
           iconStyle: IconStyle(
@@ -58,27 +60,14 @@ class _AnimatedTimelineItemState extends State<AnimatedTimelineItem>
           ),
         ),
         startChild: widget.index.isEven
-            ? Responsive.isDesktop(context)
-                ? Padding(
-                    padding: const EdgeInsets.only(left: defaultPadding * 20),
-                    child: TimelineItem(academicDetail: widget.academicDetail),
-                  )
-                : Padding(
-                    padding:
-                        const EdgeInsets.symmetric(horizontal: defaultPadding),
-                    child: TimelineItem(academicDetail: widget.academicDetail),
-                  )
+            ? TimelineItem(
+                academicDetail: widget.academicDetail,
+                index: widget.index,
+              )
             : null,
         endChild: widget.index.isOdd
-            ? Responsive.isDesktop(context)
-                ? Container(
-                    margin: const EdgeInsets.only(right: defaultPadding),
-                    child: TimelineItem(academicDetail: widget.academicDetail),
-                  )
-                : Padding(
-                    padding: const EdgeInsets.only(left: defaultPadding),
-                    child: TimelineItem(academicDetail: widget.academicDetail),
-                  )
+            ? TimelineItem(
+                academicDetail: widget.academicDetail, index: widget.index)
             : null,
         beforeLineStyle: const LineStyle(
           color: Colors.grey,
