@@ -72,13 +72,9 @@ class _AnimatedTimelineItemState extends State<AnimatedTimelineItem>
             : null,
         endChild: widget.index.isOdd
             ? Responsive.isDesktop(context)
-                ? Padding(
-                    padding: const EdgeInsets.only(left: defaultPadding * 24),
-                    child: TimelineItem(academicDetail: widget.academicDetail),
-                  )
+                ? TimelineItem(academicDetail: widget.academicDetail)
                 : Padding(
-                    padding:
-                        const EdgeInsets.symmetric(horizontal: defaultPadding),
+                    padding: const EdgeInsets.only(left: defaultPadding),
                     child: TimelineItem(academicDetail: widget.academicDetail),
                   )
             : null,

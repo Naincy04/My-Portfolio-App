@@ -19,11 +19,18 @@ class TimelineItem extends StatelessWidget {
     return ListTile(
       textColor: Colors.white,
 
-      title: Text(academicDetail.degree),
-
+      title: Responsive.isDesktop(context)
+          ? Padding(
+              padding: const EdgeInsets.only(left: defaultPadding * 12),
+              child: Text(academicDetail.degree),
+            )
+          : Padding(
+              padding: const EdgeInsets.symmetric(horizontal: defaultPadding),
+              child: Text(academicDetail.degree),
+            ),
       subtitle: Responsive.isDesktop(context)
           ? Padding(
-              padding: const EdgeInsets.only(left: defaultPadding * 16),
+              padding: const EdgeInsets.only(left: defaultPadding * 12),
               child: Text(
                   '${academicDetail.institution}\n${academicDetail.duration}'),
             )
