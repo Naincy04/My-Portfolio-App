@@ -143,9 +143,9 @@ class TimelineTile extends StatelessWidget {
             ? Container(height: 100)
             : Container(width: 100);
         if (alignment == TimelineAlign.start) {
-          children.add(Expanded(child: endChild ?? defaultChild));
+          children.add(startChild ?? defaultChild);
         } else if (alignment == TimelineAlign.end) {
-          children.insert(0, Expanded(child: startChild ?? defaultChild));
+          children.insert(0, endChild ?? defaultChild);
         } else {
           final indicatorAxisXY =
               alignment == TimelineAlign.center ? 0.5 : lineXY!;
@@ -160,8 +160,7 @@ class TimelineTile extends StatelessWidget {
           );
 
           if (positioning.firstSpace.size > 0) {
-            children.insert(
-              0,
+            children.add(
               SizedBox(
                 height: axis == TimelineAxis.horizontal
                     ? positioning.firstSpace.size
@@ -175,7 +174,8 @@ class TimelineTile extends StatelessWidget {
           }
 
           if (positioning.secondSpace.size > 0) {
-            children.add(
+            children.insert(
+              0,
               SizedBox(
                 height: axis == TimelineAxis.horizontal
                     ? positioning.secondSpace.size

@@ -41,7 +41,7 @@ class _AnimatedTimelineItemState extends State<AnimatedTimelineItem>
     return FadeTransition(
       opacity: _opacityAnimation,
       child: TimelineTile(
-        alignment: TimelineAlign.manual,
+        alignment: TimelineAlign.center,
         lineXY: 0.5,
         isFirst: widget.delay.inMilliseconds == 0,
         indicatorStyle: IndicatorStyle(
