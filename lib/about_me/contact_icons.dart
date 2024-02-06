@@ -15,16 +15,53 @@ class ContactIcon extends StatelessWidget {
         children: [
           const Spacer(),
           IconButton(
-              onPressed: () {
-                launchUrl(Uri.parse(
-                    'https://www.linkedin.com/in/naincy-kumari-972b32223/'));
-              },
-              icon: SvgPicture.asset('assets/icons/linkedin.svg')),
+            onPressed: () {
+              launchUrl(Uri.parse(
+                  'https://www.linkedin.com/in/naincy-kumari-972b32223/'));
+            },
+            icon: SvgPicture.asset(
+              'assets/icons/linkedin.svg',
+              width: 50,
+              height: 50,
+              color: Colors.white,
+            ),
+          ),
+          const SizedBox(width: defaultPadding / 2),
           IconButton(
+              iconSize: 50,
               onPressed: () {
                 launchUrl(Uri.parse('https://github.com/Naincy04'));
               },
-              icon: SvgPicture.asset('assets/icons/github.svg')),
+              icon: SvgPicture.asset(
+                'assets/icons/github.svg',
+                width: 50,
+                height: 50,
+                color: Colors.white,
+              )),
+          const SizedBox(width: defaultPadding / 2),
+          IconButton(
+              iconSize: 50,
+              onPressed: () {
+                launchUrl(Uri.parse('https://github.com/Naincy04'));
+              },
+              icon: SvgPicture.asset(
+                'assets/icons/twitter.svg',
+                width: 50,
+                height: 50,
+                color: Colors.white,
+              )),
+          const SizedBox(width: defaultPadding / 2),
+          IconButton(
+              iconSize: 50,
+              onPressed: () {
+                launchUrl(Uri.parse('https://github.com/Naincy04'));
+              },
+              icon: SvgPicture.asset(
+                'assets/icons/insta.svg',
+                width: 50,
+                height: 50,
+                color: Colors.white,
+              )),
           const Spacer(),
         ],
       ),

@@ -128,10 +128,28 @@
       "languageVersion": "2.12"
     },
     {
+      "name": "intl",
+      "rootUri": "file:///home/naincy/.pub-cache/hosted/pub.dev/intl-0.18.1",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
       "name": "lints",
       "rootUri": "file:///home/naincy/.pub-cache/hosted/pub.dev/lints-2.1.1",
       "packageUri": "lib/",
       "languageVersion": "3.0"
+    },
+    {
+      "name": "logging",
+      "rootUri": "file:///home/naincy/.pub-cache/hosted/pub.dev/logging-1.2.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.19"
+    },
+    {
+      "name": "mailer",
+      "rootUri": "file:///home/naincy/.pub-cache/hosted/pub.dev/mailer-6.0.1",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
     },
     {
       "name": "matcher",
@@ -150,6 +168,12 @@
       "rootUri": "file:///home/naincy/.pub-cache/hosted/pub.dev/meta-1.9.1",
       "packageUri": "lib/",
       "languageVersion": "2.12"
+    },
+    {
+      "name": "mime",
+      "rootUri": "file:///home/naincy/.pub-cache/hosted/pub.dev/mime-1.0.4",
+      "packageUri": "lib/",
+      "languageVersion": "2.18"
     },
     {
       "name": "path",
@@ -238,6 +262,12 @@
     {
       "name": "sky_engine",
       "rootUri": "file:///home/naincy/Desktop/flutter/bin/cache/pkg/sky_engine",
+      "packageUri": "lib/",
+      "languageVersion": "3.0"
+    },
+    {
+      "name": "smtp_test",
+      "rootUri": "file:///home/naincy/.pub-cache/hosted/pub.dev/smtp_test-0.0.1",
       "packageUri": "lib/",
       "languageVersion": "3.0"
     },
@@ -392,7 +422,7 @@
       "languageVersion": "3.0"
     }
   ],
-  "generated": "2024-02-05T17:34:37.597574Z",
+  "generated": "2024-02-05T21:21:55.657460Z",
   "generator": "pub",
   "generatorVersion": "3.1.3"
 }

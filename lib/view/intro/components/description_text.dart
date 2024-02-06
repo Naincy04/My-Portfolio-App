@@ -14,7 +14,7 @@ class AnimatedDescriptionText extends StatelessWidget {
       duration: const Duration(milliseconds: 200),
       builder: (context, value, child) {
         return Text(
-          'I\'m capable of creating excellent mobile apps, with almost a year of${Responsive.isLargeMobile(context) ? '\n' : ''} hands-on experience,${!Responsive.isLargeMobile(context) ? '\n' : ''}utilizing diverse projects to enhance skills.',
+          'I\'m capable of creating excellent mobile apps, with almost a year of${Responsive.isLargeMobile(context) ? '\n' : ''}hands-on experience,${!Responsive.isLargeMobile(context) ? '\n' : ''}utilizing diverse projects to enhance skills.',
           maxLines: 2,
           overflow: TextOverflow.ellipsis,
           style: TextStyle(color: Colors.grey, wordSpacing: 2, fontSize: value),

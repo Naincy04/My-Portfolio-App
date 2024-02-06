@@ -1,3 +1,4 @@
+import 'package:flutter_portfolio/contacts/contact_me.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:flutter/material.dart';
 import '../res/constants.dart';
@@ -10,7 +11,10 @@ class ConnectButton extends StatelessWidget {
     return Padding(
       padding: const EdgeInsets.symmetric(vertical: defaultPadding),
       child: InkWell(
-        onTap: () {},
+        onTap: () {
+          Navigator.push(context,
+              MaterialPageRoute(builder: (context) => const ContactMe()));
+        },
         borderRadius: BorderRadius.circular(defaultPadding + 10),
         child: Container(
             height: 60,

@@ -39,7 +39,7 @@ class Skills extends StatelessWidget {
                                 ratio: 3,
                               ),
                               largeMobile:
-                                  SkillsSection(crossAxisCount: 2, ratio: 1.8),
+                                  SkillsSection(crossAxisCount: 2, ratio: 1.9),
                               mobile:
                                   SkillsSection(crossAxisCount: 2, ratio: 1.5),
                               tablet: SkillsSection(
@@ -60,7 +60,7 @@ class SkillsSection extends StatelessWidget {
     SkillItem(imagePath: "assets/images/cpp.png", title: "C++"),
     SkillItem(imagePath: "assets/images/java.png", title: "Java"),
     SkillItem(imagePath: "assets/images/python.png", title: "Python"),
-    SkillItem(imagePath: "assets/images/sql.png", title: "SQL Database"),
+    SkillItem(imagePath: "assets/images/sql.png", title: "SQL"),
   ];
   final int crossAxisCount;
   final double ratio;
@@ -141,8 +141,11 @@ class CardItem extends StatelessWidget {
             ),
             Padding(
               padding: const EdgeInsets.all(5),
-              child: Text(skill.title,
-                  style: const TextStyle(color: Colors.white, fontSize: 20)),
+              child: Text(
+                skill.title,
+                style: const TextStyle(color: Colors.white, fontSize: 20),
+                overflow: TextOverflow.ellipsis,
+              ),
             )
           ],
         ),
