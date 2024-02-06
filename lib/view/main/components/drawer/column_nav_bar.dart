@@ -4,7 +4,8 @@ import 'package:flutter_portfolio/view%20model/controller.dart';
 import 'package:flutter_portfolio/view/main/components/navigation_button.dart';
 
 class ColumnNavigationBar extends StatelessWidget {
-  const ColumnNavigationBar({super.key});
+  const ColumnNavigationBar();
+
   @override
   Widget build(BuildContext context) {
     return TweenAnimationBuilder(
@@ -18,7 +19,7 @@ class ColumnNavigationBar extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
               const SizedBox(height: defaultPadding),
-              Image(image: Image.asset('assets/images/image.png').image),
+              Image(image: AssetImage('assets/images/image.png')),
               const SizedBox(height: defaultPadding),
               const Text(
                 "Naincy Kumari",
@@ -29,196 +30,57 @@ class ColumnNavigationBar extends StatelessWidget {
                 ),
               ),
               const SizedBox(height: defaultPadding * 2),
-              Container(
-                height: 45,
-                width: 200,
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(20),
-                  boxShadow: const [
-                    BoxShadow(
-                        color: Colors.blue,
-                        offset: Offset(0, -1),
-                        blurRadius: 5),
-                    BoxShadow(
-                        color: Colors.red, offset: Offset(0, 1), blurRadius: 5),
-                  ],
-                  gradient: LinearGradient(
-                      begin: Alignment.topLeft,
-                      end: Alignment.bottomRight,
-                      colors: [
-                        Colors.pink,
-                        Colors.blue.shade900,
-                      ]),
-                ),
-                child: NavigationTextButton(
-                  onTap: () {
-                    controller.animateToPage(0,
-                        duration: const Duration(milliseconds: 500),
-                        curve: Curves.easeIn);
-                  },
-                  text: 'Home',
-                ),
-              ),
-              const SizedBox(height: defaultPadding),
-              Container(
-                height: 45,
-                width: 200,
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(20),
-                  boxShadow: const [
-                    BoxShadow(
-                        color: Colors.blue,
-                        offset: Offset(0, -1),
-                        blurRadius: 5),
-                    BoxShadow(
-                        color: Colors.red, offset: Offset(0, 1), blurRadius: 5),
-                  ],
-                  gradient: LinearGradient(
-                      begin: Alignment.topLeft,
-                      end: Alignment.bottomRight,
-                      colors: [
-                        Colors.pink,
-                        Colors.blue.shade900,
-                      ]),
-                ),
-                child: NavigationTextButton(
-                    onTap: () {
-                      controller.animateToPage(1,
-                          duration: const Duration(milliseconds: 500),
-                          curve: Curves.easeIn);
-                    },
-                    text: 'About Me'),
-              ),
-              const SizedBox(height: defaultPadding),
-              Container(
-                height: 45,
-                width: 200,
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(20),
-                  boxShadow: const [
-                    BoxShadow(
-                        color: Colors.blue,
-                        offset: Offset(0, -1),
-                        blurRadius: 5),
-                    BoxShadow(
-                        color: Colors.red, offset: Offset(0, 1), blurRadius: 5),
-                  ],
-                  gradient: LinearGradient(
-                      begin: Alignment.topLeft,
-                      end: Alignment.bottomRight,
-                      colors: [
-                        Colors.pink,
-                        Colors.blue.shade900,
-                      ]),
-                ),
-                child: NavigationTextButton(
-                    onTap: () {
-                      controller.animateToPage(2,
-                          duration: const Duration(milliseconds: 500),
-                          curve: Curves.easeIn);
-                    },
-                    text: 'Education'),
-              ),
-              const SizedBox(height: defaultPadding),
-              Center(
-                child: Container(
-                  height: 45,
-                  width: 200,
-                  decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(20),
-                    boxShadow: const [
-                      BoxShadow(
-                          color: Colors.blue,
-                          offset: Offset(0, -1),
-                          blurRadius: 5),
-                      BoxShadow(
-                          color: Colors.red,
-                          offset: Offset(0, 1),
-                          blurRadius: 5),
-                    ],
-                    gradient: LinearGradient(
-                        begin: Alignment.topLeft,
-                        end: Alignment.bottomRight,
-                        colors: [
-                          Colors.pink,
-                          Colors.blue.shade900,
-                        ]),
-                  ),
-                  child: NavigationTextButton(
-                    onTap: () {
-                      controller.animateToPage(3,
-                          duration: const Duration(milliseconds: 500),
-                          curve: Curves.easeIn);
-                    },
-                    text: 'Skills',
-                  ),
-                ),
-              ),
-              const SizedBox(height: defaultPadding),
-              Container(
-                height: 45,
-                width: 200,
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(20),
-                  boxShadow: const [
-                    BoxShadow(
-                        color: Colors.blue,
-                        offset: Offset(0, -1),
-                        blurRadius: 5),
-                    BoxShadow(
-                        color: Colors.red, offset: Offset(0, 1), blurRadius: 5),
-                  ],
-                  gradient: LinearGradient(
-                      begin: Alignment.topLeft,
-                      end: Alignment.bottomRight,
-                      colors: [
-                        Colors.pink,
-                        Colors.blue.shade900,
-                      ]),
-                ),
-                child: NavigationTextButton(
-                    onTap: () {
-                      controller.animateToPage(4,
-                          duration: const Duration(milliseconds: 500),
-                          curve: Curves.easeIn);
-                    },
-                    text: 'Project'),
-              ),
-              const SizedBox(height: defaultPadding),
-              Container(
-                height: 45,
-                width: 200,
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(20),
-                  boxShadow: const [
-                    BoxShadow(
-                        color: Colors.blue,
-                        offset: Offset(0, -1),
-                        blurRadius: 5),
-                    BoxShadow(
-                        color: Colors.red, offset: Offset(0, 1), blurRadius: 5),
-                  ],
-                  gradient: LinearGradient(
-                      begin: Alignment.topLeft,
-                      end: Alignment.bottomRight,
-                      colors: [
-                        Colors.pink,
-                        Colors.blue.shade900,
-                      ]),
-                ),
-                child: NavigationTextButton(
-                  onTap: () {
-                    controller.animateToPage(5,
-                        duration: const Duration(milliseconds: 500),
-                        curve: Curves.easeIn);
-                  },
-                  text: 'Experience',
-                ),
-              ),
+              buildNavigationButton(context, 'Home', 0),
+              buildNavigationButton(context, 'About Me', 1),
+              buildNavigationButton(context, 'Academics', 2),
+              buildNavigationButton(context, 'Skills', 3),
+              buildNavigationButton(context, 'Project', 4),
+              buildNavigationButton(context, 'Experience', 5),
             ],
           ),
         );
       },
+    );
+  }
+
+  Widget buildNavigationButton(BuildContext context, String text, int index) {
+    return GestureDetector(
+      onTap: () {
+        controller.animateToPage(index,
+            duration: const Duration(milliseconds: 500), curve: Curves.easeIn);
+        Navigator.of(context).pop(); // Close the drawer
+      },
+      child: Padding(
+        padding: const EdgeInsets.symmetric(vertical: defaultPadding / 2),
+        child: Container(
+          height: 45,
+          width: 200,
+          decoration: BoxDecoration(
+            borderRadius: BorderRadius.circular(20),
+            boxShadow: const [
+              BoxShadow(
+                  color: Colors.blue, offset: Offset(0, -1), blurRadius: 5),
+              BoxShadow(color: Colors.red, offset: Offset(0, 1), blurRadius: 5),
+            ],
+            gradient: LinearGradient(
+                begin: Alignment.topLeft,
+                end: Alignment.bottomRight,
+                colors: [
+                  Colors.pink,
+                  Colors.blue.shade900,
+                ]),
+          ),
+          child: Center(
+            child: Text(
+              text,
+              style: TextStyle(
+                color: Colors.white,
+                fontWeight: FontWeight.bold,
+              ),
+            ),
+          ),
+        ),
+      ),
     );
   }
 }
