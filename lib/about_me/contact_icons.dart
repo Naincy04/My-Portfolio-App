@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_portfolio/view%20model/responsive.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:url_launcher/url_launcher.dart';
 
@@ -21,8 +22,8 @@ class ContactIcon extends StatelessWidget {
             },
             icon: SvgPicture.asset(
               'assets/icons/linkedin.svg',
-              width: 50,
-              height: 50,
+              width: Responsive.isLargeMobile(context) ? 20 : 50,
+              height: Responsive.isLargeMobile(context) ? 20 : 50,
               color: Colors.white,
             ),
           ),
@@ -34,8 +35,8 @@ class ContactIcon extends StatelessWidget {
               },
               icon: SvgPicture.asset(
                 'assets/icons/github.svg',
-                width: 50,
-                height: 50,
+                width: Responsive.isLargeMobile(context) ? 20 : 50,
+                height: Responsive.isLargeMobile(context) ? 20 : 50,
                 color: Colors.white,
               )),
           const SizedBox(width: defaultPadding / 2),
@@ -46,8 +47,8 @@ class ContactIcon extends StatelessWidget {
               },
               icon: SvgPicture.asset(
                 'assets/icons/twitter.svg',
-                width: 50,
-                height: 50,
+                width: Responsive.isLargeMobile(context) ? 20 : 50,
+                height: Responsive.isLargeMobile(context) ? 20 : 50,
                 color: Colors.white,
               )),
           const SizedBox(width: defaultPadding / 2),
@@ -58,8 +59,8 @@ class ContactIcon extends StatelessWidget {
               },
               icon: SvgPicture.asset(
                 'assets/icons/insta.svg',
-                width: 50,
-                height: 50,
+                width: Responsive.isLargeMobile(context) ? 20 : 50,
+                height: Responsive.isLargeMobile(context) ? 20 : 50,
                 color: Colors.white,
               )),
           const Spacer(),

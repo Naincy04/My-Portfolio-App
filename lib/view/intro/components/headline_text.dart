@@ -18,7 +18,7 @@ class MyPortfolioText extends StatelessWidget {
                       color: Colors.white,
                       fontWeight: FontWeight.w900,
                       height: 0,
-                      fontSize: value - 16)),
+                      fontSize: value - 10)),
               Text('Naincy Kumari',
                   style: Theme.of(context).textTheme.headlineLarge!.copyWith(
                       color: Colors.white,

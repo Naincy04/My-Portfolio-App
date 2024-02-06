@@ -56,14 +56,16 @@ class AboutMe extends StatelessWidget {
   Widget _buildContentColumn(double w) {
     return Column(
       children: [
-        Padding(
-          padding: const EdgeInsets.only(left: defaultPadding * 2),
+        // Padding(
+        //   padding: const EdgeInsets.only(left: defaultPadding * 2),
+        // child:
+        Center(
           child: RichText(
             text: TextSpan(
               style: TextStyle(
                 color: Colors.white,
                 height: 1.2,
-                fontSize: w / 20,
+                fontSize: w / 16,
                 fontWeight: FontWeight.bold,
               ),
               children: [
@@ -77,6 +79,7 @@ class AboutMe extends StatelessWidget {
             ),
           ),
         ),
+
         const SizedBox(height: defaultPadding),
         const DrawerImage(),
         const SizedBox(height: defaultPadding * 2),

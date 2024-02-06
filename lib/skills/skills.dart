@@ -26,7 +26,6 @@ class Skills extends StatelessWidget {
                         const SizedBox(height: defaultPadding),
                       const TitleText(prefix: '', title: 'Skills'),
                       const SizedBox(height: defaultPadding * 2),
-                      // SkillsSection(),
 
                       Expanded(
                           child: Responsive(
@@ -39,9 +38,9 @@ class Skills extends StatelessWidget {
                                 ratio: 3,
                               ),
                               largeMobile:
-                                  SkillsSection(crossAxisCount: 2, ratio: 1.9),
+                                  SkillsSection(crossAxisCount: 2, ratio: 2),
                               mobile:
-                                  SkillsSection(crossAxisCount: 2, ratio: 1.5),
+                                  SkillsSection(crossAxisCount: 2, ratio: 3),
                               tablet: SkillsSection(
                                 ratio: 1.4,
                                 crossAxisCount: 3,
@@ -55,12 +54,18 @@ class SkillsSection extends StatelessWidget {
   final List<SkillItem> skills = [
     SkillItem(imagePath: "assets/images/flutter.png", title: "Flutter"),
     SkillItem(imagePath: "assets/images/dart.png", title: "Dart"),
-    SkillItem(imagePath: 'assets/images/git.png', title: "Git"),
+    SkillItem(imagePath: "assets/images/firebase.png", title: "Firebase"),
     SkillItem(imagePath: "assets/images/figma.png", title: "Figma"),
+    SkillItem(imagePath: 'assets/images/git.png', title: "Git"),
+    SkillItem(imagePath: "assets/images/github.png", title: "Github"),
+    SkillItem(imagePath: "assets/images/c.png", title: "C"),
     SkillItem(imagePath: "assets/images/cpp.png", title: "C++"),
     SkillItem(imagePath: "assets/images/java.png", title: "Java"),
     SkillItem(imagePath: "assets/images/python.png", title: "Python"),
-    SkillItem(imagePath: "assets/images/sql.png", title: "SQL"),
+    SkillItem(imagePath: "assets/images/html.png", title: "HTML"),
+    SkillItem(imagePath: "assets/images/css.png", title: "CSS"),
+    SkillItem(imagePath: "assets/images/js.png", title: "JavaScript"),
+    SkillItem(imagePath: "assets/images/sql.png", title: "MySQL"),
   ];
   final int crossAxisCount;
   final double ratio;
@@ -74,7 +79,7 @@ class SkillsSection extends StatelessWidget {
           crossAxisCount: crossAxisCount,
           childAspectRatio: ratio,
           mainAxisSpacing: 10,
-          crossAxisSpacing: 10,
+          crossAxisSpacing: Responsive.isLargeMobile(context) ? 5 : 10,
         ),
         itemCount: skills.length,
         itemBuilder: (context, index) {
@@ -101,7 +106,7 @@ class CardItem extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       height: MediaQuery.sizeOf(context).height / 20,
-      width: MediaQuery.sizeOf(context).width / 20,
+      width: MediaQuery.sizeOf(context).width / 10,
       margin:
           const EdgeInsets.symmetric(vertical: 20, horizontal: defaultPadding),
       decoration: BoxDecoration(
@@ -132,8 +137,8 @@ class CardItem extends StatelessWidget {
         child: Row(
           children: [
             SizedBox(
-              width: 90,
-              height: 55,
+              width: Responsive.isLargeMobile(context) ? 70 : 90,
+              height: Responsive.isLargeMobile(context) ? 40 : 55,
               child: Padding(
                 padding: const EdgeInsets.all(5),
                 child: Image.asset(skill.imagePath),
@@ -143,7 +148,10 @@ class CardItem extends StatelessWidget {
               padding: const EdgeInsets.all(5),
               child: Text(
                 skill.title,
-                style: const TextStyle(color: Colors.white, fontSize: 20),
+                style: TextStyle(
+                  color: Colors.white,
+                  fontSize: Responsive.isLargeMobile(context) ? 16 : 20,
+                ),
                 overflow: TextOverflow.ellipsis,
               ),
             )

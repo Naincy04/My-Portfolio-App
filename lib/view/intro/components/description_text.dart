@@ -17,7 +17,8 @@ class AnimatedDescriptionText extends StatelessWidget {
           'I\'m capable of creating excellent mobile apps, with almost a year of${Responsive.isLargeMobile(context) ? '\n' : ''}hands-on experience,${!Responsive.isLargeMobile(context) ? '\n' : ''}utilizing diverse projects to enhance skills.',
           maxLines: 2,
           overflow: TextOverflow.ellipsis,
-          style: TextStyle(color: Colors.grey, wordSpacing: 2, fontSize: value),
+          style:
+              TextStyle(color: Colors.white70, wordSpacing: 2, fontSize: value),
         );
       },
     );
