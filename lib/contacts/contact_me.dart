@@ -44,7 +44,7 @@ class _ContactMeState extends State<ContactMe> {
       final sendReport = await send(emailMessage, smtpServer);
 
       // Print the result.
-      print('Message sent: ' + sendReport.toString());
+      print('Message sent: $sendReport');
     } catch (e) {
       // Print any errors that occur.
       print('Error sending email: $e');
@@ -125,7 +125,7 @@ class _ContactMeState extends State<ContactMe> {
             Responsive.isDesktop(context)
                 ? const SizedBox(height: defaultPadding * 4)
                 : const SizedBox(height: defaultPadding * 2),
-            ContactIcon(),
+            const ContactIcon(),
           ],
         ),
       ),

@@ -25,9 +25,9 @@ class IntroBody extends StatelessWidget {
                   height: size.height * 0.06,
                 ),
               if (!Responsive.isDesktop(context))
-                Padding(
-                  padding: const EdgeInsets.only(left: defaultPadding * 4),
-                  child: const AnimatedImageContainer(
+                const Padding(
+                  padding: EdgeInsets.only(left: defaultPadding * 4),
+                  child: AnimatedImageContainer(
                     width: 240,
                     height: 200,
                   ),

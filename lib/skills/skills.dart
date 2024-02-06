@@ -70,7 +70,7 @@ class SkillsSection extends StatelessWidget {
   final int crossAxisCount;
   final double ratio;
 
-  SkillsSection({required this.crossAxisCount, required this.ratio});
+  SkillsSection({super.key, required this.crossAxisCount, required this.ratio});
   @override
   Widget build(BuildContext context) {
     return SizedBox(
