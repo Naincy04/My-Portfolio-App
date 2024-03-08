@@ -36,6 +36,10 @@ To run my Portfolio App locally or on your Android device, follow these steps:
 4. Connect your Android device or start an emulator.
 5. Run `flutter run` to launch the app.
 
+## Screenshots
+
+<img src="https://github.com/Naincy04/FireGram/blob/master/FireGram.png"> &nbsp; &nbsp;
+
 ## Feedback and Contributions
 
 Feedback, suggestions, and contributions are welcome! Feel free to open an issue or submit a pull request to help improve the Portfolio App and make it even better.
