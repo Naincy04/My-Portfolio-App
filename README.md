@@ -1,4 +1,4 @@
-# Portfolio App
+# My Portfolio App
 
 Welcome to My Portfolio App! This Flutter-based responsive web and Android application is designed to showcase my skills, projects, and experiences in a visually appealing and interactive way. 
 
