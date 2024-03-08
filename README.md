@@ -1,15 +1,14 @@
 # Portfolio App
 
-Welcome to My Portfolio App! This Flutter-based responsive web and Android application is designed to help you showcase your skills, projects, and experiences in a visually appealing and interactive way. 
+Welcome to My Portfolio App! This Flutter-based responsive web and Android application is designed to showcase my skills, projects, and experiences in a visually appealing and interactive way. 
 
 ## Features
 
 - **Responsive Design:** The app adapts seamlessly to various screen sizes, ensuring optimal user experience across devices.
-- **Beautiful UI:** With carefully crafted designs and smooth animations, your portfolio will stand out and leave a lasting impression.
-- **Project Showcase:** Highlight your projects with detailed descriptions, images, and links, allowing visitors to explore your work.
-- **Skills Section:** Showcase your skills and expertise in a visually engaging manner, making it easy for potential clients or employers to understand your capabilities.
-- **Customizable Templates:** Choose from a variety of customizable templates to personalize your portfolio according to your preferences and branding.
-- **Cross-Platform Compatibility:** Whether accessed through a web browser or on an Android device, your portfolio will look and function flawlessly.
+- **Beautiful UI:** With carefully crafted designs and smooth animations.
+- **Project Showcase:** Highlighting my projects with detailed descriptions, images, and links.
+- **Skills Section:** Skills and expertise are mentioned in a visually engaging manner, making it easy for potential clients or employers to understand my capabilities.
+- **Cross-Platform Compatibility:** Whether accessed through a web browser or on an Android device, my portfolio will look and function flawlessly.
 
 ## Technologies Used
 
