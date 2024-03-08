@@ -16,7 +16,7 @@ Welcome to My Portfolio App! This Flutter-based responsive web and Android appli
 - **Dart:** Utilizing the Dart programming language, known for its efficiency and scalability, to develop the app's logic and functionality.
 - **Responsive Design Principles:** Employing responsive design principles to ensure optimal viewing and interaction experiences across a wide range of devices and screen sizes.
 
-## Showcase Your Skills
+## Skills
 
 This project serves as a demonstration of the following skills:
 
@@ -28,7 +28,7 @@ This project serves as a demonstration of the following skills:
 
 ## Getting Started
 
-To run the Portfolio App locally or on your Android device, follow these steps:
+To run my Portfolio App locally or on your Android device, follow these steps:
 
 1. Clone this repository to your local machine.
 2. Navigate to the project directory.
