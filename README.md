@@ -38,7 +38,7 @@ To run my Portfolio App locally or on your Android device, follow these steps:
 
 ## Screenshots
 
-<img src="https://github.com/Naincy04/My-Portfolio-App/blob/master/Untitled%20design.pdf"> &nbsp; &nbsp;
+<img src="https://github.com/Naincy04/My-Portfolio-App/blob/master/portfolio.png"> &nbsp; &nbsp;
 
 ## Feedback and Contributions
 
