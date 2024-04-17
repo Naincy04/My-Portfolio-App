@@ -21,7 +21,7 @@ class HomePage extends StatelessWidget {
       Academics(),
       const Skills(),
       ProjectsView(),
-      const Experience(),
+      Experience(),
       const ContactMe(),
     ]);
   }
