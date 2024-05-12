@@ -14,4 +14,8 @@ List<Experience> ExperienceList = [
     'Event Coordinator, Techstorm’23',
     'Managed the events and operations held under Omegatrix (Brain Storming competitions), which saw a participation of 350+.\nCoordinated with the team of 4 to ensure the smooth \nconduct of the event.',
   ),
+  Experience(
+    'Software Developer Intern at RIG GROUP',
+    'Developed cross-platform mobile and web applications using Flutter framework and Firebase backend services\n Enhanced user interface (UI) of the applications through code modifications, \nincorporating modern design principles and user experience (UX enhancements.\nImplemented responsive design elements to ensure optimal user experience across various devices and screen sizes.',
+  ),
 ];

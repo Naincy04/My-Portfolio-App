@@ -43,7 +43,7 @@ class ContactIcon extends StatelessWidget {
           IconButton(
               iconSize: 50,
               onPressed: () {
-                launchUrl(Uri.parse('https://github.com/Naincy04'));
+                launchUrl(Uri.parse('https://twitter.com/ItsNaincy'));
               },
               icon: SvgPicture.asset(
                 'assets/icons/twitter.svg',
@@ -55,7 +55,7 @@ class ContactIcon extends StatelessWidget {
           IconButton(
               iconSize: 50,
               onPressed: () {
-                launchUrl(Uri.parse('https://github.com/Naincy04'));
+                launchUrl(Uri.parse('https://www.instagram.com/naincy_2702/'));
               },
               icon: SvgPicture.asset(
                 'assets/icons/insta.svg',

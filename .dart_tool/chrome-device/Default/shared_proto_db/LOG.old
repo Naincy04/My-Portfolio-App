@@ -1,7 +1,10 @@
-2024/04/17-07:43:17.724 410d Reusing MANIFEST /tmp/flutter_tools.MXFLVI/flutter_tools_chrome_device.DHDEDP/Default/shared_proto_db/MANIFEST-000001
-2024/04/17-07:43:17.724 410d Recovering log #13
-2024/04/17-07:43:17.724 410d Reusing old log /tmp/flutter_tools.MXFLVI/flutter_tools_chrome_device.DHDEDP/Default/shared_proto_db/000013.log 
-2024/04/17-07:43:17.724 410d Delete type=0 #4
-2024/04/17-07:43:17.724 410d Delete type=0 #10
-2024/04/17-07:43:17.724 410d Delete type=0 #7
-2024/04/17-07:43:17.724 410d Delete type=0 #3
+2024/04/17-16:15:04.338 1eee3 Reusing MANIFEST /tmp/flutter_tools.TVKKGS/flutter_tools_chrome_device.AYEKSK/Default/shared_proto_db/MANIFEST-000001
+2024/04/17-16:15:04.338 1eee3 Recovering log #13
+2024/04/17-16:15:04.339 1eee3 Reusing old log /tmp/flutter_tools.TVKKGS/flutter_tools_chrome_device.AYEKSK/Default/shared_proto_db/000013.log 
+2024/04/17-16:15:04.339 1eee3 Delete type=0 #4
+2024/04/17-16:15:04.339 1eee3 Delete type=0 #10
+2024/04/17-16:15:04.339 1eee3 Delete type=0 #7
+2024/04/17-16:15:04.339 1eee3 Delete type=0 #3
+2024/04/17-16:15:15.280 1eee4 Level-0 table #17: started
+2024/04/17-16:15:15.283 1eee4 Level-0 table #17: 120528 bytes OK
+2024/04/17-16:15:15.285 1eee4 Delete type=0 #13

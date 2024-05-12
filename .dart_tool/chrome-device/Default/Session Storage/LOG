@@ -1,4 +1,9 @@
-2024/04/17-08:46:44.647 4 Reusing MANIFEST /tmp/flutter_tools.JJSNSI/flutter_tools_chrome_device.MRJSXV/Default/Session Storage/MANIFEST-000001
-2024/04/17-08:46:44.648 4 Recovering log #8
-2024/04/17-08:46:44.648 4 Reusing old log /tmp/flutter_tools.JJSNSI/flutter_tools_chrome_device.MRJSXV/Default/Session Storage/000008.log 
-2024/04/17-08:46:44.649 4 Delete type=0 #3
+2024/05/12-14:41:42.887 4 Reusing MANIFEST /tmp/flutter_tools.IIHDXS/flutter_tools_chrome_device.QWQXPV/Default/Session Storage/MANIFEST-000001
+2024/05/12-14:41:42.888 4 Recovering log #8
+2024/05/12-14:41:42.888 4 Level-0 table #11: started
+2024/05/12-14:41:42.890 4 Level-0 table #11: 16053 bytes OK
+2024/05/12-14:41:42.890 4 Recovering log #11
+2024/05/12-14:41:42.891 4 Reusing old log /tmp/flutter_tools.IIHDXS/flutter_tools_chrome_device.QWQXPV/Default/Session Storage/000011.log 
+2024/05/12-14:41:42.893 4 Delete type=2 #12
+2024/05/12-14:41:42.893 4 Delete type=0 #8
+2024/05/12-14:41:42.893 4 Delete type=0 #3
