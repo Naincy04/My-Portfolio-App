@@ -29,7 +29,7 @@ List<Project> projectList = [
   Project(
     'India Restaurant Website',
     'A smooth and beautiful user interface for an Indian restaurant website using HTML, CSS, and JavaScript. The website will feature sections for showcasing the menu, reservation booking, special offers, and an about us page, all designed to reflect the rich cultural heritage of Indian cuisine.',
-    'assets/images/ss1(copy).png,ss2(copy).png,ss3.(copy).png',
+    'assets/images/ss1(copy).png',
     'https://github.com/Naincy04/India-restaurant-website.git',
     'Web Development',
   ),
